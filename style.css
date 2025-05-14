@@ -1,9 +1,59 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
-  margin-top: 50px;
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-#frage {
-  font-size: 1.5em;
-  margin: 20px;
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #ff5722;
+}
+
+#card {
+  background: #fff3e0;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #fb8c00;
+}
+
+.session {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #555;
 }

@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Fragen App</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frag mich was!</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Frage</h1>
-  <p id="frage">Lade...</p>
-  <button id="nextBtn">Nächste Frage</button>
-
+  <div class="container">
+    <h1>🎲 Frag mich was!</h1>
+    <div id="card">
+      <p id="frage">Lade Frage...</p>
+    </div>
+    <button id="nextBtn">Nächste Frage ➡️</button>
+    <p class="session">Session-ID: <span id="sessionId">...</span></p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
