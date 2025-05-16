@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div id="tsparticles"></div>
   <div class="container">
     <h1>🎲 Frag mich was!</h1>
     <div id="card">
@@ -17,5 +18,37 @@
     <p class="session">Session-ID: <span id="sessionId">...</span></p>
   </div>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+<!-- Init Script -->
+<script>
+  tsParticles.load("tsparticles", {
+    background: {
+      color: {
+        value: "#fda085"  // deine aktuelle Farbe
+      }
+    },
+    fpsLimit: 60,
+    particles: {
+      number: {
+        value: 60
+      },
+      size: {
+        value: 4
+      },
+      move: {
+        enable: true,
+        speed: 1
+      },
+      opacity: {
+        value: 0.5
+      },
+      shape: {
+        type: "circle"
+      }
+    },
+    detectRetina: true
+  });
+</script>
 </body>
 </html>
